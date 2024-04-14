@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+
+    <meta charset="UTF-8">
+    <title>Tom Tseng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,300;9..40,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+
+    <style> .site-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; }
+.site-header-left { flex: 1; }
+.site-name { margin-bottom: 10px; }
+.site-tagline { font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.headshot-wrap { flex-shrink: 0; }
+.headshot { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; display: block; box-shadow: 0 0 0 2px var(--bg), 0 0 0 3.5px var(--rule); filter: brightness(0.98) saturate(0.95); }
+.bio { display: flex; flex-direction: column; gap: 18px; margin-bottom: 40px; }
+.bio p { font-size: 16px; line-height: 1.8; margin-bottom: 0; }
+.bio a { color: var(--link); text-decoration: none; border-bottom: 1px solid color-mix(in oklch, var(--accent) 30%, transparent); transition: color 0.15s, border-color 0.15s; }
+.bio a:hover { color: var(--link-h); border-bottom-color: var(--link-h); text-decoration: none; }
+.footer-links { padding-top: 28px; border-top: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; }
+.footer-links a { font-size: 13px; font-weight: 400; color: var(--muted); text-decoration: none; transition: color 0.15s; }
+.footer-links a:hover { color: var(--accent-h); text-decoration: none; }
+.footer-links-sep { color: var(--rule); user-select: none; font-size: 13px; }
+@media (max-width: 480px) { .headshot { width: 76px; height: 76px; } } </style>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  </head>
+  <body>
+    <main class="page">
+  <header class="site-header">
+    <div class="site-header-left">
+      <h1 class="site-name">Tom Tseng</h1>
+    </div>
+    <div class="headshot-wrap">
+      <img class="headshot" src="/img/headshot.webp" alt="Headshot of Tom" width="96" height="96">
+    </div>
+  </header>
+
+  <div class="bio">
+    <p>
+      I'm interested in making AI systems trustworthy as they get more capable, so
+      I'm a research engineer on the infrastructure team at <a
+      href="https://far.ai/">FAR.AI</a>, building tools for our AI safety research.
+      You can reach me at <a href="mailto:tom@tomhmtseng.com">tom@tomhmtseng.com</a>.
+    </p>
+    <p>
+      I previously spent several years on FAR's research team studying the
+      guardrails and robustness of AI models. My most prominent project found
+      <a href="https://goattack.far.ai">adversarial attacks against superhuman Go AIs</a>,
+      which showed that superhuman capabilities in a domain don't automatically
+      fix basic failure modes.
+    </p>
+    <p>
+      Before FAR, I was a software engineer at <a href="https://www.gather.town/">Gather</a> and Cruise,
+      and I worked on parallel algorithms research as a student at MIT and Carnegie Mellon.
+    </p>
+  </div>
+
+  <nav class="footer-links">
+    <a href="https://github.com/tomtseng">GitHub</a>
+    <span class="footer-links-sep" aria-hidden="true">&middot;</span>
+    <a href="https://scholar.google.com/citations?user=okAQFcwAAAAJ">Google Scholar</a>
+    <span class="footer-links-sep" aria-hidden="true">&middot;</span>
+    <a href="https://www.linkedin.com/in/tomtseng/">LinkedIn</a>
+  </nav>
+
+</main>
+
+  </body>
+</html>
