@@ -1,0 +1,110 @@
+:root {
+  --bg: oklch(96% 0.010 290);
+  --rule: oklch(84% 0.014 290);
+  --text: oklch(22% 0.015 300);
+  --muted: oklch(50% 0.020 300);
+  --accent: oklch(35% 0.14 305);
+  --accent-h: oklch(27% 0.14 305);
+  --link: oklch(37% 0.15 305);
+  --link-h: oklch(27% 0.14 305);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "DM Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  margin: 0;
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+  line-height: 1.1em;
+}
+
+h1 {
+  font-size: 1.728em;
+}
+
+h2 {
+  font-size: 1.44em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4, h5, h6 {
+  font-size: 1em;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: var(--link);
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  color: var(--link-h);
+}
+
+ul {
+  margin-top: 0;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+  border-top: 1px solid var(--text);
+  border-bottom: 1px solid var(--text);
+  border-collapse: collapse;
+}
+table th {
+  border-bottom: 1px solid #ddd;
+  padding: 0.15em 2em;
+}
+table td {
+  padding: 0.15em 2em;
+}
+
+.page {
+  width: 100%;
+  max-width: 580px;
+}
+
+.site-header {
+  margin-bottom: 40px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-name {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 480px) {
+  .site-name {
+    font-size: 34px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
